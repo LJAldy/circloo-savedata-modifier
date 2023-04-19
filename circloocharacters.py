@@ -67,6 +67,10 @@ for char in translate:
                 coordword[4] = float(coordword[4]) * 2 * size
                 coordword[1] = (coordword[1] - 1300) * size + xstart #reset coord, resize, repos to next char
                 coordword[2] = (coordword[2] - 1400) * size + ystart
+            for valueindex in range(len(coordword)):
+                num = coordword[valueindex]
+                if str(num)[len(str(num))-2:] == ".0":
+                    coordword[valueindex] = str(num)[:len(str(num))-2] # remove decimal on floats
             shapestomake.append(str(coordword))
         shapenum += 1
     xstart += (width + 4) * size
