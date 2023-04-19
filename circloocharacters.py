@@ -9,7 +9,7 @@ characters = {
     "7" : [16,"b 1308 1401 8 1 0","b 1315 1412 1 12 0","b 1311 1412 5 1 0"],
     "8" : [16,"b 1308 1401 8 1 0","b 1315 1412 1 12 0","b 1301 1412 1 12 0","b 1308 1423 8 1 0","b 1308 1412 8 1 0"],
     "9" : [16,"b 1308 1401 8 1 0","b 1315 1412 1 12 0","b 1301 1406.50 1 6.50 0","b 1308 1423 8 1 0","b 1308 1412 8 1 0"],
-    "." : [2,"b 1300 1424 1 1 0"],
+    "." : [2,"b 1301 1424 1 1 0"],
     "A" : [16],
     "B" : [16],
     "C" : [16],
@@ -39,10 +39,13 @@ characters = {
 }
 
 translate = input("Text: ")
-xstart = int(input("TLX: "))
-ystart = int(input("TLY: "))
+xstart = int(input("TSX: "))
+xend = int(input("TEX: "))
+ystart = int(input("TSY: "))
 size = int(input("Size: "))
+datanum = int(input("Start: "))
 shapestomake = []
+xbegin = xstart
 for char in translate:
     lettershape = characters[char]
     shapenum = 0
@@ -57,13 +60,23 @@ for char in translate:
                     coordword.append(shape[lastwordend:letter])
                     lastwordend = letter + 1
             coordword.append(shape[lastwordend:len(shape)])
-            coordword[1] = float(coordword[1])-float(coordword[3])
-            coordword[2] = float(coordword[2])-float(coordword[4])
-            coordword[3] = float(coordword[3]) * 2
-            coordword[4] = float(coordword[4]) * 2
             if coordword[0] == "b":
-                coordword[1] = coordword[1] - 1300 + xstart
-                coordword[2] = coordword[2] - 1400 + ystart
-            print(coordword)
+                coordword[1] = float(coordword[1])-float(coordword[3]) #repos coord start to topleft
+                coordword[2] = float(coordword[2])-float(coordword[4])
+                coordword[3] = float(coordword[3]) * 2 * size
+                coordword[4] = float(coordword[4]) * 2 * size
+                coordword[1] = (coordword[1] - 1300) * size + xstart #reset coord, resize, repos to next char
+                coordword[2] = (coordword[2] - 1400) * size + ystart
+            shapestomake.append(str(coordword))
         shapenum += 1
-    xstart += width + 4
+    xstart += (width + 4) * size
+    if xstart > xend: # newline
+        xstart = xbegin
+        ystart += 28 * size
+for shapenum in range(len(shapestomake)):
+    for cleanchar in "'[],":
+        shapestomake[shapenum] = shapestomake[shapenum].replace(cleanchar,"")
+for shape in shapestomake:
+    print("> " + str(datanum))
+    print(shape)
+    datanum += 1
