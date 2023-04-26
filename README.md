@@ -1,11 +1,9 @@
 # circloo-savedata-modifier
 Programs that can change level editor data in circloO. Only useful for the steam version. 
 
-To find level save data, go to 'C:\Users\[USERNAME]\AppData\Local\circloO2'.
+To find level save data, go to 'C:\Users\\[USERNAME]\AppData\Local\circloO2'.
 
-Each level save in the level editor is in there as 'le_level_1.sav' (replace 1 with any number).
-
-Level names for each are in 'le_SaveNames'.
+Each level save in the level editor is in there as 'le_level_1.sav' (replace 1 with any number). Level names for each are in 'le_SaveNames'.
 
 Copy-paste into 'circlooshapetranslate' using the SHAPE COORDS first THEN the index number (using '<').
 
