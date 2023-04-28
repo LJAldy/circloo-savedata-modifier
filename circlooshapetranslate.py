@@ -8,7 +8,7 @@ startnumber = int(input("Start number: "))
 transx = int(input("X translation: "))
 transy = int(input("Y translation: "))
 for counter in range(len(listcoord)):
-    if counter % 2 == 0:
+    if counter % 2 == 1:
         listcoord[counter] = "< " + str(startnumber)
         startnumber += 1
     else:
