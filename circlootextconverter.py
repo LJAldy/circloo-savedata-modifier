@@ -87,7 +87,7 @@ characters = {
     "`NL`" : [0],
 }
 
-# ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;!?'()[]+-*/%~|#@&<>^`PI``DG``//``B/``~=``''``+-``^2``^3``D^``^/``BP``BX``HR``ST``PL``PS``OO``:)``:(``:|``;)``NL`
+# abcdefghijklmnopqrstuvwxyz0123456789.,:;!?'()[]+-*/%~|#@&<>^`pi``dg``//``b/``~=``+-``^2``^3``^/``''``d^``bp``bx``hr``st``oo``ps``pl``:)``:|``:(``;)``nl`
 while True:
     choice = input("Choose an option:\n[0] Convert Text to circloO\n[1] Normal Character List\n[2] Special Character List\n : ")
     if choice == "1":

@@ -9,7 +9,7 @@ Copy-paste into 'circlooshapetranslate' using the SHAPE COORDS first THEN the in
 
 Results of both programs are printed afterwards and must be copy-pasted into the level save file (without overlapping indexes).
 
-Start number refers to the index the coords will be printed as, and it should be ONE MORE than the end index in the file.
+Start number refers to the index the coords will be printed as, and it should be ONE MORE than the end index in the file, or the number you want to replace.
 
 Purposes of both programs should be used recreationally only, and only for circloO. Ask permission for anything else.
 

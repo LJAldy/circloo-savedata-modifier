@@ -19,7 +19,7 @@ for counter in range(len(listcoord)):
                 coordword.append(listcoord[counter][lastwordend:letter])
                 lastwordend = letter + 1
         coordword.append(listcoord[counter][lastwordend:len(listcoord[counter])])
-        if coordword[0] == "b" or coordword[0] == "c" or coordword[0] == "rc" or coordword[0] == "mc" or coordword[0] == "mb":
+        if coordword[0] == "b" or coordword[0] == "c" or coordword[0] == "rc" or coordword[0] == "mc" or coordword[0] == "mb" or coordword[0] == "y":
             coordword[1] = float(coordword[1]) + transx
             coordword[2] = float(coordword[2]) + transy
         elif coordword[0] == "l_at":
