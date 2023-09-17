@@ -1,17 +1,17 @@
 # circloo-savedata-modifier
-Programs that can change level editor data in circloO. Only useful for the steam version. 
+Programs that can change level editor data in circloO.
 
-To find level save data, go to 'C:\Users\\[USERNAME]\AppData\Local\circloO2'.
+Obtain level save data by copying to clipboard in the level editor, then paste in a text file.
 
-Each level save in the level editor is in there as 'le_level_1.sav' (replace 1 with any number). Level names for each are in 'le_SaveNames'.
+Alternatively, to find level save data, go to 'C:\Users\\[USERNAME]\AppData\Local\circloO2'.
 
-Copy-paste into 'circlooshapetranslate' using the SHAPE COORDS first THEN the index number (using '<').
+'Start number:' is the number where you want to insert new data into (uses '<'). It refers to the index the coords will be printed as, and it should be ONE MORE than the end index in the file, or the number you want to replace.
 
-Results of both programs are printed afterwards and must be copy-pasted into the level save file (without overlapping indexes).
+'Enter coords:' requires you to paste the data that will be used/changed.
 
-Start number refers to the index the coords will be printed as, and it should be ONE MORE than the end index in the file, or the number you want to replace.
+Results of these programs are printed afterwards and must be copy-pasted into the level save file (without overlapping indexes).
 
-Purposes of both programs should be used recreationally only, and only for circloO. Ask permission for anything else.
+Purposes of these programs should be used recreationally only, and only for circloO. Ask permission for anything else.
 
 I am not responsible for loss, hinderance, or modification of any data, levels, or houseplants.
 
