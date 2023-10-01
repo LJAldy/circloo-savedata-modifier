@@ -1,5 +1,5 @@
 # circloo-savedata-modifier
-Programs that can change level editor data in circloO.
+Programs that can change level editor data in circloO. Only text converter and shape translate are useful.
 
 Obtain level save data by copying to clipboard in the level editor, then paste in a text file.
 
