@@ -92,7 +92,7 @@ while True:
     choice = input("Choose an option:\n[0] Convert Text to circloO\n[1] Normal Character List\n[2] Special Character List\n : ")
     if choice == "1":
         print("\nLetters: ABCDEFGHIJKLMNOPQRSTUVWXYZ\nNumbers: 0123456789\nSymbols: .,:;!?'()[]+-*/%~|#@&<>^\n")
-    if choice == "2":
+    elif choice == "2":
         print("Special characters may not be on a keyboard and must have a two character code surrounded by ` to function.\n`PI` = Pi\n`DG` = Degree Symbol\n`//` = Division Symbol\n`B/` = Backslash")
         print("`~=` = Approximately Equal\n`+-` = Plus or Minus\n`^2` = Squared\n`^3` = Cubed\n`^/` = Square Root\n`''` = Speech Mark\n`D^` = Down Arrow\n`BP` = Bullet Point\n`BX` = Solid Box")
         print("`HR` = Heart\n`ST` = Star\n`OO` = Circle\n`PS` = Pause\n`PL` = Play\n`:)` = Smile\n`:|` = Neutral Face\n`:(` = Frown\n`;)` = Wink\n`NL` = Force New Line\n")
