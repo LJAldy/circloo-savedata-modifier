@@ -17,4 +17,4 @@ I am not responsible for loss, hinderance, or modification of any data, levels, 
 
 Text generated should not be inappropriate. This includes harassment, spam, and complaints.
 
-Also note that text takes a lot of objects and may lag.
+Also note that text and images can take a lot of objects and may lag.
